@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LiberybaseDataSet1" targetNamespace="http://tempuri.org/LiberybaseDataSet1.xsd" xmlns:mstns="http://tempuri.org/LiberybaseDataSet1.xsd" xmlns="http://tempuri.org/LiberybaseDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LiberybaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LiberybaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BaseData2.Properties.Settings.GlobalReference.Default.LiberybaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TableJournalTableAdapter" GeneratorDataComponentClassName="TableJournalTableAdapter" Name="TableJournal" UserDataComponentName="TableJournalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiberybaseConnectionString (Settings)" DbObjectName="dbo.TableJournal" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Название книги], Автор, [До какого числа] FROM dbo.TableJournal</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Название книги" DataSetColumn="Название книги" />
+              <Mapping SourceColumn="Автор" DataSetColumn="Автор" />
+              <Mapping SourceColumn="До какого числа" DataSetColumn="До какого числа" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LiberybaseDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LiberybaseDataSet1" msprop:Generator_UserDSName="LiberybaseDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TableJournal" msprop:Generator_TableClassName="TableJournalDataTable" msprop:Generator_TableVarName="tableTableJournal" msprop:Generator_TablePropName="TableJournal" msprop:Generator_RowDeletingName="TableJournalRowDeleting" msprop:Generator_RowChangingName="TableJournalRowChanging" msprop:Generator_RowEvHandlerName="TableJournalRowChangeEventHandler" msprop:Generator_RowDeletedName="TableJournalRowDeleted" msprop:Generator_UserTableName="TableJournal" msprop:Generator_RowChangedName="TableJournalRowChanged" msprop:Generator_RowEvArgName="TableJournalRowChangeEvent" msprop:Generator_RowClassName="TableJournalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Название_x0020_книги" msprop:Generator_ColumnVarNameInTable="columnНазвание_книги" msprop:Generator_ColumnPropNameInRow="Название_книги" msprop:Generator_ColumnPropNameInTable="Название_книгиColumn" msprop:Generator_UserColumnName="Название книги" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Автор" msprop:Generator_ColumnVarNameInTable="columnАвтор" msprop:Generator_ColumnPropNameInRow="Автор" msprop:Generator_ColumnPropNameInTable="АвторColumn" msprop:Generator_UserColumnName="Автор" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="До_x0020_какого_x0020_числа" msprop:Generator_ColumnVarNameInTable="columnДо_какого_числа" msprop:Generator_ColumnPropNameInRow="До_какого_числа" msprop:Generator_ColumnPropNameInTable="До_какого_числаColumn" msprop:Generator_UserColumnName="До какого числа" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
